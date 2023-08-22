@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitbucket Integration</title>
+</head>
+<body>
+    <h1>Bitbucket Repository Information</h1>
+    {% if repository_info %}
+        <p><strong>Repository Name:</strong> {{ repository_info.name }}</p>
+        <p><strong>Repository Description:</strong> {{ repository_info.description }}</p>
+        <!-- Add more information as needed -->
+    {% else %}
+        <p>Failed to fetch repository information.</p>
+    {% endif %}
+</body>
+</html>
